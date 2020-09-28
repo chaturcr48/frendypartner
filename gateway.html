@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=
+  Montserrat:wght@500;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form1.css">
+    <style>
+        .body-me {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    background-size: cover;
+    height: 100vh;
+  }
+  .btn {
+    width: 80%;
+    margin: auto;
+  }
+  .btn-home {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  /* .copyright {
+    color: black;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+  } */
+  .h3 {
+    color: #212f3d;
+    font-family: "Bebas Neue", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 0 !important;
+    margin-top: -5%;
+  }
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color:white;
+    /* opacity: 0.7; */
+  }
+  
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="cityName"] {
+    margin-bottom: 7.5%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .tetrad-logo {
+    margin-top: 0%;
+    width: 47%;
+    height: 44%;
+    margin-bottom: 1% !important;
+  }
+  
+  /* other page  */
+  .btn-oauth {
+    display: inline-block;
+    margin: 1% auto 0;
+    width: 22%;
+  }
+  .btn-other-page {
+    margin-bottom: 2%;
+  }
+  .form-signin-other-page {
+    width: 100%;
+  }
+  .form-signin-other-page .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5%;
+  }
+  .h1-welcome{
+      position: absolute;
+      top: 5%;
+      font-family: "Bebas Neue", cursive;
+  }
+  .h-100 {
+    width: 75%;
+    position: relative;
+  }
+  .h3-other-page {
+    color: #212f3d;
+    font-family: "Bebas Neue", cursive;
+    font-size: 3rem;
+    margin-top: 1%;
+    margin-bottom: 0 !important;
+  }
+  .h5 {
+    font-size: 1rem;
+  }
+  .tetrad-logo-other-page {
+    margin-bottom: 0.1rem !important;
+    margin-top: 0px;
+  }
+  @media (max-width: 576px) {
+    /* home  */
+    .tetrad-logo {
+      margin-top: 0%;
+      margin-bottom: 1% !important;
+      width: 47%;
+    height: 44%;
+    }
+    .h3 {
+      margin-bottom: 1% !important;
+    }
+    .h1-welcome{
+        font-size: 2.35rem;
+    }
+    .btn-oauth {
+      width: 80%;
+      padding-right: 0;
+    }
+    .form-signin {
+      width: 70%;
+      max-width: 330px;
+      margin: 0 auto;
+    }
+    .form-signin-other-page {
+      width: 87%;
+      margin: 0;
+      padding-bottom: 3%;
+      padding-top: 3%;
+    }
+  
+    /* features page  */
+    .titles {
+      font-size: 3.5rem;
+      letter-spacing: 8px;
+    }
+  }
+  
+  /* features page  */
+  
+  .columns {
+    width: 50vw;
+    height: 52vh;
+    padding: 0;
+  }
+  
+  .titles {
+    vertical-align: middle;
+    text-align: center;
+    top: 31%;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+  @media (max-width: 992px) {
+    .columns {
+      width: 100vw;
+    }
+    .titles {
+      font-size: 3.5rem;
+      letter-spacing: 8px;
+    }
+  }
+  /* new */
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /* iframe's parent node */
+  div#root {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* iframe itself */
+  div#root > iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* mainpage
+  .columns {
+    height: 52vh;
+    padding: 0;
+  }
+  
+  .titles {
+    vertical-align: middle;
+    text-align: center;
+    top: 31%;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+  @media (max-width: 992px) {
+    .titles {
+      font-size: 3.5rem;
+      letter-spacing: 8px;
+    }
+  } */
+    </style>
+</head>
+<body class="body-me">
+    <h1 class="h1-welcome">W E L C O M E &nbsp;&nbsp;  T O &nbsp;&nbsp;  F R E N D Y</h1><br>
+    <div class="form-signin text-center " action="/" method="POST">
+        <img
+          class="tetrad-logo"
+          src="logo.jpeg"
+          alt="Tetrad"
+          width="72"
+          height="72"
+        />
+        <a class="btn btn-dark btn-md btn-home" href="/admin" role="button"
+          >Admin</a
+        >
+        <a class="btn btn-dark btn-md btn-home" href="/partner" role="button"
+          >Partner Registeration</a
+        >
+    </div>
+      <footer>
+</body>
+
+</html>

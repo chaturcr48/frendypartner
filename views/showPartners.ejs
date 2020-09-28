@@ -1,0 +1,50 @@
+
+    <%- include('partials/header') %>
+    <h1>Partners:</h1>
+        <div class="container-fluid">
+            <% data.forEach(function(partner){ %>
+            <div class="row">
+                <div class="col-4">
+                    <ul>
+                        <li><p>Partner first Name :<%= partner.firstName %></p></li>
+                        <li><p>Partner last Name :<%= partner.lastName %></p></li>
+                        <li><p>Partner Age :<%= partner.age %></p></li>
+                        <li><p>Partner Gender :<%= partner.gender %></p></li>
+                        <li><p>Partner Education :<%= partner.education %></p></li>
+                        <li><p>Partner Place :<%= partner.form5.place %></p></li>
+                        <li><p>Form Date :<%= partner.form5.date %></p></li>
+						<li><p>Signature : 
+							<img src="<%= partner.form5.signature %>">
+							</p>
+						</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li><p>Occupation :<%= partner.form3.occupation %></p></li>
+                        <li><p>Business :<%= partner.form3.business %></p></li>
+                        <li><p>eFrendy Partner:<%= partner.form3.eFrendyPartner %></p></li>
+                        <li><p>smartPhone :<%= partner.form3.smartPhone %></p></li>
+                        <li><p>Payment Mode :<%= partner.form3.payment %></p></li>
+                        <li><p>Have a joint family :<%= partner.form3.jointFamily %></p></li>
+                        <li><p>owns a flat:<%= partner.form3.flat %></p></li>
+                        <li><p>staying in rented house :<%= partner.form3.How_long_you_have_been_staying_in_the_house %></p></li> 
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li><p>Society has :<%= partner.form4. Does_your_society_has %></p></li>
+                        <li><p>number of flats in buildings :<%= partner.form4.If_flats_how_many_flats %></p></li>
+                        <li><p>number of buildings<%= partner.form4.how_many_such_buildings %></p></li>
+                        <li><p>Total flats/houses:<%= partner.form4.total_flats_or_houses %></p></li>
+                        <li><p>Has a common whatsapp group ?:<%= partner.form4.have_a_whatsapp_group_for_residents %></p></li>
+                        <li><p>Has a common communication platform ? :<%= partner.form4.have_a_common_communication_platform_for_residents %></p></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <hr/>
+        </div>
+    <% }) %>
+    <%- include('partials/footer') %>
+<!--     
