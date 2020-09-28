@@ -65,9 +65,9 @@ const partnerSchema = new mongoose.Schema({
 });
 const Partner = mongoose.model("Partner", partnerSchema);
 var searchquery="";
-app.listen("3000", function (req, res) {
-  console.log("Port 3000 is up and running");
-});
+// app.listen("3000", function (req, res) {
+//   console.log("Port 3000 is up and running");
+// });
 app.get("/", function (req, res) {
   res.sendFile( __dirname+"/gateway.html")
 });

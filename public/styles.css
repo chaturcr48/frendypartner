@@ -1,6 +1,5 @@
 .row{
     background-color: #eeeeee;
-    font-family: "Bebas Neue", cursive;
     padding-bottom: 5%;
     margin-right: 0px;
     margin-left: 0%;
@@ -18,3 +17,7 @@ hr {
     border: 0;
     border-top: 1px solid red;
   }
+.signature{
+    width: 210px;
+    height: 100px;
+}
